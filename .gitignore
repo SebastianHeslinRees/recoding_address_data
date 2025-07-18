@@ -1,0 +1,43 @@
+# Unzipped address data files (large shapefiles)
+unzip/
+
+# macOS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files (optional - uncomment if you want to exclude large data files)
+# *.zip
+# *.csv
+# *.xlsx
+# *.shp
+# *.dbf
+# *.shx
+# *.prj
+# *.cpg
