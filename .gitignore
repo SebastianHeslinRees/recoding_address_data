@@ -1,5 +1,9 @@
 # Unzipped address data files (large shapefiles)
 unzip/
+unzip/*
+unzip/**/*
+**/unzip/
+**/unzip/*
 
 # macOS files
 .DS_Store
