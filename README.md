@@ -2,7 +2,7 @@
 
 ## 📊 Overview
 
-This notebook agregates London residential address data from 2011 to 2024, examining address count changes at both Output Area (OA) and  Ward  levels. The analysis includes:
+This notebook aggregates London residential address data from 2011 to 2024, examining address count changes at both Output Area (OA) and  Ward  levels. The analysis includes:
 
 ## 🎯 Key Features
 
@@ -21,16 +21,17 @@ This notebook agregates London residential address data from 2011 to 2024, exami
 - **LOAC Lookup**: London Output Area Classification table for filtering London areas
 - **Ward Lookup**: Output Area to Ward mapping (2024) - Office for National Statistics
 
-##  Quick Start
+## 🚀 Quick Start
 
 ### Installation
 
 Clone the repository and install locally:
 
-bash
-git clone 
-cd gsscoder_python
+```bash
+git clone repo
+cd recoding_address_data
 pip install -r requirements.txt
+```
 
 ---
 
@@ -63,4 +64,4 @@ This work is licensed under a
 [cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
 [cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
 
-please email [sebastian.heslin-rees@london.gov.uk] for license infomation.
+please email [sebastian.heslin-rees@london.gov.uk] for licence information.
