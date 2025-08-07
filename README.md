@@ -113,13 +113,6 @@ pip install -r requirements.txt
 - **Interactive Maps**: Temporal visualisations of housing development patterns
 - **Quality Reports**: Data validation summaries and model performance metrics
 
-## ⚠️ Data Limitations
-
-- **Census Dependency**: Bedroom estimates rely on 2011/2021 census as anchor points
-- **Geographic Changes**: Some uncertainty in areas with significant boundary changes
-- **Address Classification**: Relies on AddressBase Premium residential classification
-- **Model Assumptions**: Linear interpolation may not capture sudden housing changes
-
 ## 🤝 Contributing
 
 We welcome contributions! Please feel free to:
