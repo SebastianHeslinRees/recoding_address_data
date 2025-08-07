@@ -36,6 +36,9 @@ build/
 *.swp
 *.swo
 
+# everything in london data folder
+london_data/
+
 # Data files (optional - uncomment if you want to exclude large data files)
 # *.zip
 # *.csv
@@ -45,3 +48,4 @@ build/
 # *.shx
 # *.prj
 # *.cpg
+london_data/
