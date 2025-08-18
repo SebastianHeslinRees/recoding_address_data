@@ -2,7 +2,7 @@
 
 ## 📊 Overview
 
-This repository contains 4 notebooks:
+This repository contains 5 notebooks:
 
 1. **recoding_address.ipynb** - Aggregates AddressBase Premium point data to Output Areas and Wards using weighted spatial joins.
    Creates annual address count time series with year-over-year change calculations and interactive visualisations.
@@ -15,6 +15,10 @@ This repository contains 4 notebooks:
 
 4. **LBSM_analysis.ipynb** - Compares address counts with London Building Stock Model (LBSM) UPRN data.
    Analyses systematic differences between datasets and establishes correlation patterns for quality assurance.
+
+5. **comparing_output_to_population_timeseries.ipynb** - Compare population estimates to address counts
+
+
 
 ## 📓 Notebooks
 
@@ -53,7 +57,7 @@ This repository contains 4 notebooks:
   - `bedroom_count_ward22.csv` - Complete bedroom time series by ward (2011-2024)
 
 
-## Two Validation Notebooks
+## Three Validation Notebooks
 
 ### 3. `compare_to_old_unit_data.ipynb`
 **Purpose**: Validation study comparing new address data with existing housing unit datasets
@@ -81,6 +85,31 @@ This repository contains 4 notebooks:
   - 90.7% data coverage overlap between datasets
   - Identifies systematic differences due to data collection methods and temporal gaps
 
+### 5. `comparing_output_to_population_timeseries.ipynb`
+**Purpose**: Validation analysis comparing address count estimates against official population estimates at ward level
+- **Key Processes**:
+  - Integration of ONS population estimates (2021-based) with bedroom count time series data
+  - Correlation coefficient analysis between weighted address counts and population trends
+  - Year-over-year percentage change calculations for both address counts and population
+  - Identification of wards with weak correlations (|r| < 0.3) flagged as potentially problematic areas
+  - Interactive dropdown menus with correlation strength categorisation (Strong/Moderate/Weak/Very Weak)
+  - Normalised trend analysis to compare relative growth patterns regardless of absolute values
+- **Key Visualisations**:
+  - Bubble plot: percentage change in addresses vs percentage change in population (large differences highlighted in red)
+    ![Ward Level Bubble Plot](bubble_plot.png)
+  - Address count vs population comparison plots:
+    - (a) Time series line graphs with dual y-axes
+    - (b) Normalised divergence plot showing relative growth patterns  
+    - (c) Correlation coefficient analysis by ward
+    ![Address Count vs Population](address_countvspopulation.png)
+    ![Divergent Plot](divergent_plot.png)
+    ![Correlation Plot](correlation_plot.png)
+- **Outputs**: 
+  - Correlation summary statistics across all London wards
+  - List of wards with very weak correlations requiring further investigation
+  - Interactive visualisations for individual ward trend analysis
+  - Data quality assessment metrics for interpolation validation
+
 ## 📁 Data Sources
 
 ### Primary Datasets
@@ -91,6 +120,7 @@ This repository contains 4 notebooks:
 - **Ward Lookup**: Output Area to Ward mapping (2024) - Office for National Statistics
 - **LBSM API**: London Building Stock Model for additional property characteristics
 - **Weighted lookup**: lookup to weighted output areas to ward but give the pecentage of the oa in the the repective wards thus any value of the oa can be proportional to this for greater accuracy
+- **ONS population estimates**: Population estimates to check change in addresses against population
 
 
 ## 🚀 Quick Start
