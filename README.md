@@ -50,6 +50,10 @@ This repository contains 5 notebooks:
   - Interactive temporal mapping 
   ![Ward Level Bedroom Estimates Map](bedroom_estimates_map.png) 
   ![Ward Level Bedroom Animation](ward_animation.gif)
+- Various sense-checking methods and visualisations to check for outlier wards, including histograms, scatter plots, and Bland-Altman plots:  
+  ![Scatter Plot of Differences between dwelling and address counts](scatter_difference.png)  
+  ![Bland-Altman Plot](Bland-altman-plot.png)
+
 - **Methodology**: 
   - Uses census years as anchor points with UnivariateSpline fitting
   - Preserves bedroom-to-address ratios through linear interpolation
