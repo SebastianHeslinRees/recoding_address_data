@@ -48,7 +48,8 @@ This repository contains 5 notebooks:
     ![Ward Level Bedroom Estimates]( bedroom_estimate_plot.png)
   bedroom_estimate_plot
   - Interactive temporal mapping 
-  ![Ward Level Bedroom Estimates Map](bedroom_estimates_map.png)
+  ![Ward Level Bedroom Estimates Map](bedroom_estimates_map.png) 
+  ![Ward Level Bedroom Animation](ward_animation.gif)
 - **Methodology**: 
   - Uses census years as anchor points with UnivariateSpline fitting
   - Preserves bedroom-to-address ratios through linear interpolation
